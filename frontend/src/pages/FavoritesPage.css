@@ -1,0 +1,63 @@
+.favorites-page {
+  padding: 2rem;
+}
+
+.favorites-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.favorites-table th,
+.favorites-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  height: 110px;
+}
+
+.favorite-product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favorite-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.favorite-remove {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.favorite-remove:hover {
+  color: darkred;
+}
+
+@media (max-width: 768px) {
+  .favorite-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .favorites-table th,
+  .favorites-table td {
+    height: 90px;
+    padding: 10px;
+  }
+}

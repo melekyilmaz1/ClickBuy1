@@ -1,0 +1,6 @@
+.products .product-wrapper,
+.products .product-carousel {
+  display: flex;
+  gap: 20px;
+}
+
